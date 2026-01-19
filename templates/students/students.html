@@ -1,3 +1,8 @@
+{% extends 'Home/base.html' %}
+{% load static %}
+
+{% block body %}
+
 <!DOCTYPE html>
 <html lang="en">
    <!-- Mirrored from preschool.dreamguystech.com/html-template/students.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Oct 2021 11:11:43 GMT -->
@@ -7,21 +12,21 @@
       <title>Preskool - Students</title>
       <link rel="shortcut icon" href="assets/img/favicon.png">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&amp;display=swap">
-      <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-      <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
-      <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
-      <link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css">
-      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="{% static 'assets/plugins/bootstrap/css/bootstrap.min.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/fontawesome.min.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/all.min.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/plugins/datatables/datatables.min.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
    </head>
    <body>
       <div class="main-wrapper">
          <div class="header">
             <div class="header-left">
                <a href="index.html" class="logo">
-               <img src="assets/img/logo.png" alt="Logo">
+               <img src="{% static 'assets/img/logo.png' %}" alt="Logo">
                </a>
                <a href="index.html" class="logo logo-small">
-               <img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
+               <img src="{% static 'assets/img/logo-small.png' %}" alt="Logo" width="30" height="30">
                </a>
             </div>
             <a href="javascript:void(0);" id="toggle_btn">
@@ -52,7 +57,7 @@
                               <a href="#">
                                  <div class="media">
                                     <span class="avatar avatar-sm">
-                                    <img class="avatar-img rounded-circle" alt="User Image" src="assets/img/profiles/avatar-02.jpg">
+                                    <img class="avatar-img rounded-circle" alt="User Image" src="{% static 'assets/img/profiles/avatar-02.jpg' %}">
                                     </span>
                                     <div class="media-body">
                                        <p class="noti-details"><span class="noti-title">Carlson Tech</span> has approved <span class="noti-title">your estimate</span></p>
@@ -65,7 +70,7 @@
                               <a href="#">
                                  <div class="media">
                                     <span class="avatar avatar-sm">
-                                    <img class="avatar-img rounded-circle" alt="User Image" src="assets/img/profiles/avatar-11.jpg">
+                                    <img class="avatar-img rounded-circle" alt="User Image" src="{% static 'assets/img/profiles/avatar-11.jpg' %}">
                                     </span>
                                     <div class="media-body">
                                        <p class="noti-details"><span class="noti-title">International Software Inc</span> has sent you a invoice in the amount of <span class="noti-title">$218</span></p>
@@ -78,7 +83,7 @@
                               <a href="#">
                                  <div class="media">
                                     <span class="avatar avatar-sm">
-                                    <img class="avatar-img rounded-circle" alt="User Image" src="assets/img/profiles/avatar-17.jpg">
+                                    <img class="avatar-img rounded-circle" alt="User Image" src="{% static 'assets/img/profiles/avatar-17.jpg' %}">
                                     </span>
                                     <div class="media-body">
                                        <p class="noti-details"><span class="noti-title">John Hendry</span> sent a cancellation request <span class="noti-title">Apple iPhone XR</span></p>
@@ -91,7 +96,7 @@
                               <a href="#">
                                  <div class="media">
                                     <span class="avatar avatar-sm">
-                                    <img class="avatar-img rounded-circle" alt="User Image" src="assets/img/profiles/avatar-13.jpg">
+                                    <img class="avatar-img rounded-circle" alt="User Image" src="{% static 'assets/img/profiles/avatar-13.jpg' %}">
                                     </span>
                                     <div class="media-body">
                                        <p class="noti-details"><span class="noti-title">Mercury Software Inc</span> added a new product <span class="noti-title">Apple MacBook Pro</span></p>
@@ -109,12 +114,12 @@
                </li>
                <li class="nav-item dropdown has-arrow">
                   <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                  <span class="user-img"><img class="rounded-circle" src="assets/img/profiles/avatar-01.jpg" width="31" alt="Ryan Taylor"></span>
+                  <span class="user-img"><img class="rounded-circle" src="{% static 'assets/img/profiles/avatar-01.jpg' %}" width="31" alt="Ryan Taylor"></span>
                   </a>
                   <div class="dropdown-menu">
                      <div class="user-header">
                         <div class="avatar avatar-sm">
-                           <img src="assets/img/profiles/avatar-01.jpg" alt="User Image" class="avatar-img rounded-circle">
+                           <img src="{% static 'assets/img/profiles/avatar-01.jpg' %}" alt="User Image" class="avatar-img rounded-circle">
                         </div>
                         <div class="user-text">
                            <h6>Ryan Taylor</h6>
@@ -326,7 +331,7 @@
                                        <td>PRE2209</td>
                                        <td>
                                           <h2 class="table-avatar">
-                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-01.jpg" alt="User Image"></a>
+                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="{% static 'assets/img/profiles/avatar-01.jpg' %}" alt="User Image"></a>
                                              <a href="student-details.html">Aaliyah</a>
                                           </h2>
                                        </td>
@@ -350,7 +355,7 @@
                                        <td>PRE2213</td>
                                        <td>
                                           <h2 class="table-avatar">
-                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-03.jpg" alt="User Image"></a>
+                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="{% static 'assets/img/profiles/avatar-03.jpg' %}" alt="User Image"></a>
                                              <a href="student-details.html">Malynne</a>
                                           </h2>
                                        </td>
@@ -374,7 +379,7 @@
                                        <td>PRE2143</td>
                                        <td>
                                           <h2 class="table-avatar">
-                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-02.jpg" alt="User Image"></a>
+                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="{% static 'assets/img/profiles/avatar-02.jpg' %}" alt="User Image"></a>
                                              <a href="student-details.html">Levell Scott</a>
                                           </h2>
                                        </td>
@@ -398,7 +403,7 @@
                                        <td>PRE2431</td>
                                        <td>
                                           <h2 class="table-avatar">
-                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-03.jpg" alt="User Image"></a>
+                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="{% static 'assets/img/profiles/avatar-03.jpg' %}" alt="User Image"></a>
                                              <a href="student-details.html">Minnie</a>
                                           </h2>
                                        </td>
@@ -422,7 +427,7 @@
                                        <td>PRE1534</td>
                                        <td>
                                           <h2 class="table-avatar">
-                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-04.jpg" alt="User Image"></a>
+                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="{% static 'assets/img/profiles/avatar-04.jpg' %}" alt="User Image"></a>
                                              <a href="student-details.html">Lois A</a>
                                           </h2>
                                        </td>
@@ -446,7 +451,7 @@
                                        <td>PRE2153</td>
                                        <td>
                                           <h2 class="table-avatar">
-                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-05.jpg" alt="User Image"></a>
+                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="{% static 'assets/img/profiles/avatar-05.jpg' %}" alt="User Image"></a>
                                              <a href="student-details.html">Calvin</a>
                                           </h2>
                                        </td>
@@ -470,7 +475,7 @@
                                        <td>PRE1252</td>
                                        <td>
                                           <h2 class="table-avatar">
-                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-06.jpg" alt="User Image"></a>
+                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="{% static 'assets/img/profiles/avatar-06.jpg' %}" alt="User Image"></a>
                                              <a href="student-details.html">Joe Kelley</a>
                                           </h2>
                                        </td>
@@ -494,7 +499,7 @@
                                        <td>PRE1434</td>
                                        <td>
                                           <h2 class="table-avatar">
-                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-07.jpg" alt="User Image"></a>
+                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="{% static 'assets/img/profiles/avatar-07.jpg' %}" alt="User Image"></a>
                                              <a href="student-details.html">Vincent</a>
                                           </h2>
                                        </td>
@@ -518,7 +523,7 @@
                                        <td>PRE2345</td>
                                        <td>
                                           <h2 class="table-avatar">
-                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-08.jpg" alt="User Image"></a>
+                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="{% static 'assets/img/profiles/avatar-08.jpg' %}" alt="User Image"></a>
                                              <a href="student-details.html">Kozma  Tatari</a>
                                           </h2>
                                        </td>
@@ -542,7 +547,7 @@
                                        <td>PRE2365</td>
                                        <td>
                                           <h2 class="table-avatar">
-                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-09.jpg" alt="User Image"></a>
+                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="{% static 'assets/img/profiles/avatar-09.jpg' %}" alt="User Image"></a>
                                              <a href="student-details.html">John Chambers</a>
                                           </h2>
                                        </td>
@@ -566,7 +571,7 @@
                                        <td>PRE1234</td>
                                        <td>
                                           <h2 class="table-avatar">
-                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-10.jpg" alt="User Image"></a>
+                                             <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="{% static 'assets/img/profiles/avatar-10.jpg' %}" alt="User Image"></a>
                                              <a href="student-details.html">Nathan Humphries</a>
                                           </h2>
                                        </td>
@@ -599,12 +604,14 @@
             </footer>
          </div>
       </div>
-      <script src="assets/js/jquery-3.6.0.min.js"></script>
-      <script src="assets/js/popper.min.js"></script>
-      <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-      <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-      <script src="assets/plugins/datatables/datatables.min.js"></script>
-      <script src="assets/js/script.js"></script>
+      <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+      <script src="{% static 'assets/js/popper.min.js' %}"></script>
+      <script src="{% static 'assets/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+      <script src="{% static 'assets/plugins/slimscroll/jquery.slimscroll.min.js' %}"></script>
+      <script src="{% static 'assets/plugins/datatables/datatables.min.js' %}"></script>
+      <script src="{% static 'assets/js/script.js' %}"></script>
    </body>
    <!-- Mirrored from preschool.dreamguystech.com/html-template/students.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Oct 2021 11:11:49 GMT -->
 </html>
+
+{% endblock %}
